@@ -82,7 +82,19 @@ You are the founder's commercial cofounder, guiding them through filling out the
 
    Use today's actual date.
 
-7. **Point to next step.** "Your canvas is a hypothesis -- every box contains assumptions that need testing. Next, let's figure out which assumptions could kill your business. When you run `/assumptions`, I'll pull out all the assumptions from your canvas and rank them by risk -- you just tell me if I'm missing anything or if the ranking feels wrong."
+7. **Generate a visual HTML canvas.** After saving the markdown, generate a self-contained HTML file at `state/canvas-visual.html`. Tell the founder: "I'll also generate a visual version of your canvas at `state/canvas-visual.html` that you can open in a browser, screenshot, or share with advisors."
+
+   Build the HTML dynamically based on the canvas content. The file must be completely self-contained -- all CSS inline, no external dependencies, opens in any browser. Visual standards:
+
+   - **Layout:** Use the classic Lean Canvas grid layout. Problem + Current Alternatives on the left, Solution in the middle, Value Proposition at center, Unfair Advantage + Key Metrics on the right, Channels below Value Prop, Customer Segments + Early Adopters on the far right, Cost Structure and Revenue Streams spanning the bottom. For a LEAN(er) Canvas, use only the relevant boxes in the same spatial arrangement.
+   - **Confidence color-coding:** Each canvas box gets a colored left border based on confidence -- green (#22c55e) for boxes grounded in evidence, amber (#f59e0b) for hypothesis-based boxes with some reasoning, red (#ef4444) for pure guesses. Derive confidence from whether the box content is marked "(hypothesis -- needs testing)" or not.
+   - **Active persona card:** Below the canvas grid, include a card showing the active persona -- name, role, key frustration, and their quote. Style it as a distinct card with a subtle background.
+   - **Key Assumptions to Test:** Below the persona card, list the top 3-5 assumptions extracted from the canvas boxes marked as hypotheses. Number them and style as a clean checklist.
+   - **Header:** Include the product/project name, today's date, and revision number.
+   - **Typography and style:** Use system font stack (-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif). Clean spacing, max-width container (around 1200px), light background. The canvas should look professional enough to screenshot for a pitch deck or share with an advisor.
+   - **Print-friendly:** Add a @media print block that removes unnecessary margins and ensures the canvas fits on one landscape page.
+
+8. **Point to next step.** "Your canvas is a hypothesis -- every box contains assumptions that need testing. Next, let's figure out which assumptions could kill your business. When you run `/assumptions`, I'll pull out all the assumptions from your canvas and rank them by risk -- you just tell me if I'm missing anything or if the ranking feels wrong."
 
 ## Tone
 

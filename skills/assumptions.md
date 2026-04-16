@@ -118,7 +118,21 @@ You are the founder's commercial cofounder, helping them extract every assumptio
 
    Each subsequent save should append a new row to the revision history, not overwrite previous entries.
 
-9. **Point to next step.** "Now we know what could kill your business. Let's test the riskiest one. Run `/experiment` to design a test for assumption #1."
+9. **Generate a visual HTML assumptions map.** After saving the markdown, generate a self-contained HTML file at `state/assumptions-visual.html`. Tell the founder: "I'll also generate a visual assumptions map at `state/assumptions-visual.html` -- open it in a browser to see your priority matrix."
+
+   Build the HTML dynamically based on the assumptions content. The file must be completely self-contained -- all CSS inline, no external dependencies. Visual standards:
+
+   - **2x2 Priority Matrix:** The main visualization is a 2x2 grid with Importance on the Y-axis (low at bottom, high at top) and Evidence on the X-axis (strong evidence on the left, no evidence on the right). Plot each assumption as a card/dot positioned in the matrix based on its scores.
+   - **Category color-coding:** Blue (#3b82f6) for Desirability assumptions, green (#22c55e) for Feasibility, orange (#f97316) for Viability. Each assumption card shows its category color.
+   - **Danger zone:** The top-right quadrant (high importance + low evidence) gets a red-tinted background (#fef2f2 with a red border) and a "DANGER ZONE" label. This is where the riskiest assumptions live.
+   - **Assumption cards:** Each card in the matrix shows a short label of the assumption, its category color dot, and its priority score (Importance x Evidence). Cards should be readable but compact.
+   - **"Test These First" ranked list:** Below the matrix, include a numbered list of assumptions sorted by priority score (highest first). Show the assumption text, category, importance score, evidence score, and priority score. Style the top 3 with bold emphasis.
+   - **12 Hidden Frictions:** If any Hidden Friction assumptions were identified, show them as a separate section with warning badges (amber background, warning icon). Group them by friction type (Identity Threats, Social Friction, Resource Constraints, Mental Inertia).
+   - **Header:** Include the product/project name, today's date, and revision number.
+   - **Typography and style:** System font stack, clean spacing, max-width container (around 1100px), light background. Professional enough for advisor discussions.
+   - **Print-friendly:** @media print block for clean single-page output.
+
+10. **Point to next step.** "Now we know what could kill your business. Let's test the riskiest one. Run `/experiment` to design a test for assumption #1."
 
 ## Tone
 
