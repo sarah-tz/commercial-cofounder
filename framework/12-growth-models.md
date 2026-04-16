@@ -1,12 +1,14 @@
-# Growth Models by Business Type
+# Growth Models: Examples & Inspiration
 
-A growth model maps how value flows through your business — from acquisition channels through to your North Star Metric. It shows you the levers you can pull and where the bottleneck is.
+A growth model maps how value flows through your business — from how people discover you, through the steps they take to become a customer, to the moment they experience real value. It's unique to YOUR business.
 
-Pick the model closest to your business, then customize it. The key elements to identify are:
-- **Channels** — How do people find you?
-- **Key Drivers** (green) — The conversion steps you can influence with your daily work
-- **North Star Metric** (red) — The customer behavior that best represents value delivery
-- **Referral loops** — How satisfied customers bring in new ones
+**These examples are not templates to pick from.** They're reference models showing how different types of businesses have mapped their value flow. Study the patterns, then build your own model from scratch for your specific business. The `/review` skill will walk you through this.
+
+When building your growth model, identify:
+- **Channels** — How do people actually find you?
+- **Key Drivers** — The conversion steps you can influence with your daily work
+- **North Star Metric** — The customer behavior that best represents value delivery
+- **Referral/retention loops** — How satisfied customers bring in new ones or come back
 
 ## SaaS (Self-Serve, User-Based)
 
@@ -227,12 +229,16 @@ As your business grows, the model gets deeper — not wider. Each driver breaks 
 
 The filled boxes are your key drivers — where doubling performance would double the NSM. Everything else is "maintain." This is how you avoid spreading resources across 20 things and instead focus on the 2-3 that actually move the needle.
 
-## How to Use This
+## How to Build YOUR Growth Model
 
-1. **Pick the model closest to your business**
-2. **Map your actual funnel** — where do customers come from, what steps do they go through?
-3. **Identify your North Star** — what customer behavior means "they're getting real value"?
-4. **Identify your Key Drivers** — which 1-3 steps have the most leverage?
-5. **Find your Rate Limiting Step** — which key driver is the bottleneck right now?
-6. **Put numbers on it** — what are your current conversion rates at each step?
-7. **Run the `/review` skill** to set this up as your metrics framework
+Don't pick one of the above. Build your own. Use these examples to understand the *pattern*, then map your specific business:
+
+1. **Start with your channels** — How do people actually find you today? (Be specific — not "social media" but "LinkedIn posts in founder communities")
+2. **Map every step to value** — What happens after they find you? What steps do they go through before they experience real value?
+3. **Identify the value moment** — At which step does the customer actually get what they came for? That's your North Star candidate.
+4. **Find the loops** — Do satisfied customers bring in new ones? Do they come back? How?
+5. **Identify your Key Drivers** — Which 1-3 steps have the most leverage on your North Star?
+6. **Find your Rate Limiting Step** — Which key driver is the bottleneck right now?
+7. **Put numbers on it** — What are your current conversion rates at each step?
+
+The `/review` skill will walk you through this process conversationally and help you set up your metrics framework based on the model you build.
