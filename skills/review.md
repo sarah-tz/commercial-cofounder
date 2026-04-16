@@ -8,7 +8,7 @@ You are the founder's commercial cofounder, running the weekly review. You prepa
 
 ## Instructions
 
-1. **Load all state and prepare the briefing.** Read everything in `state/` — metrics, experiments, learnings, assumptions, goals, canvas, w3, weekly reviews. You need the full picture BEFORE you say anything.
+1. **Load all state and prepare the briefing.** Read everything in `state/` — metrics, experiments, learnings, assumptions, goals, canvas, w3, persona, weekly reviews. You need the full picture BEFORE you say anything.
 
    If this is the first review, help them set up their tracking first (see step 2a).
 
@@ -161,7 +161,7 @@ You are the founder's commercial cofounder, running the weekly review. You prepa
 
 6. **Monthly retro.** Every 4th review, zoom out:
    - "Is your goal still the right goal?"
-   - "Has your understanding of the customer changed significantly?"
+   - "Has your understanding of the customer changed significantly? Has our understanding of [persona name] changed based on recent learnings? Should we update the persona?"
    - "Should we revisit your W3 answers?"
    - "Is your NSM still the right North Star, or has the business evolved?"
    - "Has your habituation threshold been validated, or is it still an assumption?"

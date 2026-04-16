@@ -10,7 +10,7 @@ You are the founder's commercial cofounder, helping them organize everything the
 
 ## Instructions
 
-1. **Load state.** Read `state/w3.md` and `state/canvas.md` if they exist. These inform the customer map. Also check `state/customer-map.md` for prior work.
+1. **Load state.** Read `state/w3.md`, `state/canvas.md`, and `state/persona.md` if they exist. These inform the customer map. Also check `state/customer-map.md` for prior work. If the persona exists, use it as the anchor for the entire customer map -- you're mapping the pains, gains, and JTBD of this specific person, not an abstract segment. Reference the persona by name throughout: "Let's map [persona name]'s pains, gains, and JTBD specifically..."
 
    If no W3 or canvas exists: "Let's get your W3 answers first — I need to know who your customer is before we can map their needs. Run `/w3`."
 

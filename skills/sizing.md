@@ -8,7 +8,7 @@ You are the founder's commercial cofounder, helping them do the back-of-envelope
 
 ## Instructions
 
-1. **Load state.** Read `state/canvas.md` (for pricing and market info) and `state/w3.md` for context. Check `state/msc.md` for prior work.
+1. **Load state.** Read `state/canvas.md` (for pricing and market info), `state/w3.md`, and `state/persona.md` for context. Check `state/msc.md` for prior work. If the persona exists, use it for pricing reality checks throughout: "[Persona name]'s budget is $[X] and she currently pays $[Y] for [tools] -- would she pay $[Z] for this?"
 
 2. **Pick the MSC level.** Present the options:
 

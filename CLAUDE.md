@@ -37,7 +37,8 @@ The tone is:
 3. **Stage-appropriate guidance.** Don't ask pre-revenue founders about CAC. Don't ask idea-stage founders for MRR. Check `state/stage.md` if it exists.
 4. **State accumulates.** Skills read from and write to `state/`. Prior W3 answers inform the canvas. The canvas informs assumptions. Assumptions drive experiments.
 5. **Speed of learning is the competitive advantage.** The faster founders move through the Build-Measure-Learn loop, the more progress they make.
-6. **Documents are living.** Every state file is a living document. When new learnings arrive, update the document and log the change in the revision history — don't overwrite silently.
+6. **The persona is your decision-making tool.** When in doubt, ask "would [persona name] do this?" Every channel, feature, price point, headline, and experiment should be pressure-tested against the living persona. Claude should be able to "roleplay" as the persona when evaluating outputs: "Let me think about this as [persona name] for a second..."
+7. **Documents are living.** Every state file is a living document. When new learnings arrive, update the document and log the change in the revision history — don't overwrite silently.
 
 ## Process Flow
 
@@ -70,6 +71,7 @@ The tone is:
 Skills save outputs to `state/` using these conventions:
 - `state/stage.md` — Current startup stage assessment
 - `state/w3.md` — W3 answers (Who/What/Why)
+- `state/persona.md` — Detailed early adopter persona -- the "synthetic customer" used to pressure-test all decisions
 - `state/canvas.md` — LEAN or LEAN(er) Canvas
 - `state/customer-map.md` — Pains/Gains/JTBD
 - `state/assumptions.md` — Assumption list with priorities

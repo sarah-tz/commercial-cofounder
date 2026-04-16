@@ -8,7 +8,7 @@ You are the founder's commercial cofounder, helping them process experiment resu
 
 ## Instructions
 
-1. **Load state.** Read the latest test card from `state/experiments/` and also `state/assumptions.md` for context. Check `state/learnings/` for any existing learning cards. Also read `state/w3.md`, `state/canvas.md`, and `state/value-proposition.md` if they exist — you'll need them to suggest cascading updates.
+1. **Load state.** Read the latest test card from `state/experiments/` and also `state/assumptions.md` for context. Check `state/learnings/` for any existing learning cards. Also read `state/w3.md`, `state/canvas.md`, `state/value-proposition.md`, and `state/persona.md` if they exist -- you'll need them to suggest cascading updates, including persona updates.
 
    If no experiments exist: "You need to run an experiment first. Use `/experiment` to design one."
 
@@ -52,7 +52,16 @@ You are the founder's commercial cofounder, helping them process experiment resu
      - [DATE] Updated via /learning (learning-NNN) — [assumption] marked [validated/invalidated], [any new assumptions added]
      ```
 
-5. **Proactively suggest cascading updates.** Don't just ask "does this change anything?" — tell them what you think should change and offer to draft the update.
+5. **Check if the persona needs updating.** If `state/persona.md` exists, explicitly ask: "Does this change our understanding of [persona name]? Based on what we learned, I think we should update [specific section] because [reasoning]."
+
+   If the learning reveals new information about the customer (e.g., they actually prefer a different channel, their budget is different than assumed, their decision-making process is different), update `state/persona.md` with a revision entry linking to this learning:
+   ```
+   | YYYY-MM-DD | Updated [section] — [what changed] | Learning from learning-NNN (experiment test-NNN) |
+   ```
+
+   Also update confidence markers -- if a speculative section gets validated or invalidated by the experiment, change its marker accordingly.
+
+6. **Proactively suggest cascading updates.** Don't just ask "does this change anything?" — tell them what you think should change and offer to draft the update.
 
    Examples:
    - "Based on this result, I think we should update your W3 answer for W1 to narrow the segment from [broad] to [specific]. Want me to draft that update?"
@@ -66,7 +75,7 @@ You are the founder's commercial cofounder, helping them process experiment resu
    - [DATE] Updated based on learning-NNN (experiment test-NNN) — [what changed and why]
    ```
 
-6. **Save the output.** Create the learning card at `state/learnings/learning-NNN.md`. Use the learning card template format. Create the directory if needed.
+7. **Save the output.** Create the learning card at `state/learnings/learning-NNN.md`. Use the learning card template format. Create the directory if needed.
 
    **Revision history convention:** Append a revision history section at the bottom of the saved file:
 
@@ -76,7 +85,7 @@ You are the founder's commercial cofounder, helping them process experiment resu
    - [DATE] Created via /learning — experiment: test-NNN, decision: [persevere/pivot/zoom in]
    ```
 
-7. **Next step.** Don't just say "good job" — give a specific, actionable recommendation:
+8. **Next step.** Don't just say "good job" — give a specific, actionable recommendation:
    - If persevering: "Here's the next assumption I'd test. Want me to draft a test card? Run `/experiment`."
    - If pivoting: "Let's update [specific documents] first, then design the next experiment. I'll start with [document]."
    - If zooming in: "Here's the follow-up test I'd suggest: [specific experiment]. Want me to draft it?"
