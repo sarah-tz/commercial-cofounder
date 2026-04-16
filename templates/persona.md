@@ -1,5 +1,9 @@
 # Living Persona: [Name]
 
+**Status:** active | exploring | parked | next
+**Created:** [date]
+**Last updated:** [date]
+
 > This is your "synthetic customer" -- a detailed, realistic person who represents your early adopter. Use them to pressure-test every decision: channels, features, pricing, headlines, experiments. When in doubt, ask "would [Name] do this?"
 
 ## Demographics

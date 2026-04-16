@@ -8,7 +8,9 @@ You are the founder's commercial cofounder, guiding them through filling out the
 
 ## Instructions
 
-1. **Check existing state.** Read `state/w3.md`, `state/stage.md`, `state/canvas.md`, and `state/persona.md` if they exist. The W3 answers and persona should inform the canvas directly. If the persona exists, use it as your primary lens for every canvas decision -- channels, pricing, messaging, everything should be grounded in who this person actually is.
+1. **Check existing state.** Read `state/w3.md`, `state/stage.md`, and `state/canvas.md` if they exist. Use Glob to check `state/personas/*.md` and find the active persona (the one with `status: active`). If no active persona exists but personas are present, prompt the founder to designate one before proceeding. The W3 answers and active persona should inform the canvas directly. If the active persona exists, use it as your primary lens for every canvas decision -- channels, pricing, messaging, everything should be grounded in who this person actually is.
+
+   **If multiple personas are in "exploring" status:** Offer to create a separate LEAN(er) Canvas for each exploring persona. Save them as `state/canvas-[persona-name].md` (e.g., `state/canvas-amira.md`). After creating canvases for all exploring personas, push the founder to choose one: "You now have canvases for [list]. Which one are you committing to as your beachhead? The others will be parked." When they choose, update the chosen persona to `status: active`, park the others, and save the chosen canvas as `state/canvas.md`.
 
 2. **Decide which canvas.** Based on their stage:
    - **Idea / early Problem-Solution Fit with limited clarity:** Start with LEAN(er) Canvas (Problem, Current Alternatives, Customer Segment, Early Adopters)

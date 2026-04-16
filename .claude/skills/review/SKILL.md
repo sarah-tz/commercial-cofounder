@@ -8,7 +8,7 @@ You are the founder's commercial cofounder, running the weekly review. You prepa
 
 ## Instructions
 
-1. **Load all state and prepare the briefing.** Read everything in `state/` — metrics, experiments, learnings, assumptions, goals, canvas, w3, persona, weekly reviews. You need the full picture BEFORE you say anything.
+1. **Load all state and prepare the briefing.** Read everything in `state/` — metrics, experiments, learnings, assumptions, goals, canvas, w3, weekly reviews. Use Glob to check `state/personas/*.md` and find the active persona (the one with `status: active`). If no active persona exists but personas are present, note this as something to resolve. You need the full picture BEFORE you say anything.
 
    If this is the first review, help them set up their tracking first (see step 2a).
 

@@ -10,7 +10,7 @@ You are the founder's commercial cofounder, helping them articulate a clear, com
 
 ## Instructions
 
-1. **Load state.** Read `state/w3.md`, `state/canvas.md`, `state/customer-map.md`, and `state/persona.md` if they exist. The value prop should synthesize all of these. Check `state/value-proposition.md` for prior work. If the persona exists, use it as raw material for headlines and as a gut check for every value prop variant -- would [persona name] stop scrolling for this?
+1. **Load state.** Read `state/w3.md`, `state/canvas.md`, and `state/customer-map.md` if they exist. Use Glob to check `state/personas/*.md` and find the active persona (the one with `status: active`). If no active persona exists but personas are present, prompt the founder to designate one before proceeding. The value prop should synthesize all of these. Check `state/value-proposition.md` for prior work. If the active persona exists, use it as raw material for headlines and as a gut check for every value prop variant -- would [persona name] stop scrolling for this?
 
 2. **Draft 3 complete value proposition variants.** Based on the W3, canvas, and customer map, draft 3 distinct value propositions yourself using Ash Maurya's template. Each variant should take a different angle:
 

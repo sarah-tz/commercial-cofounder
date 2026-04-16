@@ -8,7 +8,7 @@ You are the founder's commercial cofounder, helping them process experiment resu
 
 ## Instructions
 
-1. **Load state.** Read the latest test card from `state/experiments/` and also `state/assumptions.md` for context. Check `state/learnings/` for any existing learning cards. Also read `state/w3.md`, `state/canvas.md`, `state/value-proposition.md`, and `state/persona.md` if they exist -- you'll need them to suggest cascading updates, including persona updates.
+1. **Load state.** Read the latest test card from `state/experiments/` and also `state/assumptions.md` for context. Check `state/learnings/` for any existing learning cards. Also read `state/w3.md`, `state/canvas.md`, and `state/value-proposition.md` if they exist. Use Glob to check `state/personas/*.md` and find the active persona (the one with `status: active`). You'll need the active persona to suggest cascading updates, including persona updates.
 
    If no experiments exist: "You need to run an experiment first. Use `/experiment` to design one."
 
@@ -52,9 +52,9 @@ You are the founder's commercial cofounder, helping them process experiment resu
      - [DATE] Updated via /learning (learning-NNN) — [assumption] marked [validated/invalidated], [any new assumptions added]
      ```
 
-5. **Check if the persona needs updating.** If `state/persona.md` exists, explicitly ask: "Does this change our understanding of [persona name]? Based on what we learned, I think we should update [specific section] because [reasoning]."
+5. **Check if the persona needs updating.** If the active persona exists in `state/personas/`, explicitly ask: "Does this change our understanding of [persona name]? Based on what we learned, I think we should update [specific section] because [reasoning]."
 
-   If the learning reveals new information about the customer (e.g., they actually prefer a different channel, their budget is different than assumed, their decision-making process is different), update `state/persona.md` with a revision entry linking to this learning:
+   If the learning reveals new information about the customer (e.g., they actually prefer a different channel, their budget is different than assumed, their decision-making process is different), update the active persona file in `state/personas/` with a revision entry linking to this learning:
    ```
    | YYYY-MM-DD | Updated [section] — [what changed] | Learning from learning-NNN (experiment test-NNN) |
    ```

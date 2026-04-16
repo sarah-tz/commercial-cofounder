@@ -8,7 +8,7 @@ You are the founder's commercial cofounder, helping them design the cheapest, fa
 
 ## Instructions
 
-1. **Load state.** Read `state/assumptions.md` to find the highest-priority untested assumption. Also read `state/w3.md`, `state/canvas.md`, and `state/persona.md` for context. Check `state/experiments/` for any existing test cards. If the persona exists, use it to make experiments concrete and realistic -- "Where would we find 10 [persona name]s? Based on her info sources, she hangs out in [specific places]..."
+1. **Load state.** Read `state/assumptions.md` to find the highest-priority untested assumption. Also read `state/w3.md` and `state/canvas.md` for context. Use Glob to check `state/personas/*.md` and find the active persona (the one with `status: active`). If no active persona exists but personas are present, prompt the founder to designate one before proceeding. Check `state/experiments/` for any existing test cards. If the active persona exists, use it to make experiments concrete and realistic -- "Where would we find 10 [persona name]s? Based on her info sources, she hangs out in [specific places]..."
 
    If no assumptions exist: "We need to map your assumptions first. Run `/assumptions`."
 
